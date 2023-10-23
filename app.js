@@ -6,6 +6,7 @@ const Header = () => {
         <div className="header">
             <div className="logo-conatiner">
                 <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgUs_-Phd7DpL_Q4QlLeoiFDCrngm6xMIog&usqp=CAU" />
+                <h1>Tomato</h1>
             </div>
             <div className="nav-items">
                 <ul>
