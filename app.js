@@ -20,10 +20,39 @@ const Header = () => {
     );
 };
 
+const styleCard = {
+    backgroundColor:"white",
+    color:"black",
+    borderRadius:"1rem"
+}
+
+
+const RestaurantCard = () =>{
+    return (
+        <div className="res-card" style={styleCard}>
+            <img className= "res-logo" alt="res-logo" src="https://b.zmtcdn.com/data/pictures/chains/8/310078/749216f498eb2ed21ffd317f4bdc8a1d_o2_featured_v2.jpg?output-format=webp"/>
+            <h3>Mera Khana</h3>
+        </div>
+
+    );
+};
+
+const Body = () =>{
+    return (
+        <div className="body">
+                <div className="search">Search</div>
+                <div className="res-Container">
+                <RestaurantCard />
+                </div>
+        </div>
+    );
+};
+
 const AppLayout = () => {
     return (
         <div className="app">
             <Header />
+            <Body />
         </div>
     )
 }
