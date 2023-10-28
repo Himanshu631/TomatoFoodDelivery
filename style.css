@@ -124,6 +124,7 @@ border-radius: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0rem 5rem;
 }
 
 .shimmer-card{display: flex;
@@ -135,4 +136,15 @@ border-radius: 1.5rem;
     height: 22rem;
     border: 2px solid white;
     margin: 1rem;
+}
+
+.login-btn{
+    padding: 0.2rem 0.5rem;
+    width: auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-btn{
+    margin-right: 15rem;
 }
