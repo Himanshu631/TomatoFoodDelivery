@@ -16,7 +16,7 @@ const Header = () => {
                     <li>My Profile</li>
                 </ul>
             </div> 
-        </div>
+        </div>  
     );
 };
 
