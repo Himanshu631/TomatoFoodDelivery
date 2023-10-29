@@ -26,9 +26,10 @@ const Body = () =>{
     }
 
     return (
-        <div className="body">
+        <div className="body">       
+                
                 <div className="filter">
-                    <div class>
+                    <div className="top-cont">
                         <input 
                             type="text"
                             className="input-box"
@@ -48,12 +49,13 @@ const Body = () =>{
                 
                     <button className="filter-btn" onClick={()=>{
                         const filteredlist = listofRes.filter(
-                            (res) => res.info.avgRating > 4.1
+                            (res) => res.info.avgRating > 4.3
                         );
                         console.log(filteredlist);
                         setListOfRes(filteredlist);
                         }}>Top rated restaurant</button>
                 </div>
+
                 <div className="res-container">
                 {
                     filtereRes.map((restaurant) => ( <RestaurantCard key={restaurant.info.id} resData={restaurant} />))
