@@ -16,21 +16,21 @@ const Header = () => {
             <div className="nav-items">
                 <ul>
                     <li>
-                        <Link to="/">
+                        <Link to="/" className="custom-link">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about">    
+                        <Link to="/about" className="custom-link">    
                             About Us
                         </Link>
                     </li>
                     <li>
-                    <Link to="/contact">
+                    <Link to="/contact" className="custom-link">
                         Contact Us
                     </Link></li>
-                    <li>Cart</li>
-                    <li>My Profile</li>
+                    <li className="custom-link">Cart</li>
+                    <li className="custom-link">My Profile</li>
                     <button className="login-btn" onClick={()=>{
                         btnLogin==="Login" ? setbtnLogin("Logout") : setbtnLogin("Login"); 
                     }}>{btnLogin}</button>

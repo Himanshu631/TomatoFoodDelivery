@@ -152,4 +152,15 @@ border-radius: 1.5rem;
 
 .custom-link{
     text-decoration: none;
+    color: black;
+}
+
+.custom-link:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.user-card{
+    border: 2px solid white;
+    padding: 0rem 2rem;
 }
