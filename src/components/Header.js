@@ -29,6 +29,11 @@ const Header = () => {
                     <Link to="/contact" className="custom-link">
                         Contact Us
                     </Link></li>
+                    <li>
+                        <Link to="/grocery" className="custom-link">
+                            Grocery
+                        </Link>
+                    </li>
                     <li className="custom-link">Cart</li>
                     <li className="custom-link">My Profile</li>
                     <button className="login-btn" onClick={()=>{
