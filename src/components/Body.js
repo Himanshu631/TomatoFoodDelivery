@@ -36,18 +36,18 @@ const Body = () =>{
     }
 
     return (
-        <div className="body">       
+        <div className="body">      
                 
-                <div className="filter">
+                <div className="filter flex my-6 px-6">
                     <div className="top-cont">
                         <input 
                             type="text"
-                            className="input-box"
+                            className="input-box border border-black px-2 bg-green-200"
                             value={searchText}
                             onChange={(e)=>{
                                 setsearchText(e.target.value)
                             }} />
-                        <button className="search-btn"
+                        <button className="search-btn px-2 border border-black bg-yellow-200 font-bold hover:bg-blue-300"
                         onClick={()=> {
                             console.log(searchText);
                             const filterRes = listofRes.filter(
@@ -57,7 +57,7 @@ const Body = () =>{
                         }}>Search</button>
                     </div>
                 
-                    <button className="filter-btn" onClick={()=>{
+                    <button className="filter-btn mx-9 px-2 font-bold border border-black bg-red-300 rounded-md hover:bg-blue-300" onClick={()=>{
                         const filteredlist = listofRes.filter(
                             (res) => res.info.avgRating > 4.1
                         );
@@ -66,7 +66,7 @@ const Body = () =>{
                         }}>Top rated restaurant</button>
                 </div>
 
-                <div className="res-container">
+                <div className="res-container flex flex-wrap ">
                 {
                     filtereRes.map((restaurant) => ( <Link key={restaurant.info.id} className="custom-link"
                         to={"/restaurant/"+restaurant.info.id}>

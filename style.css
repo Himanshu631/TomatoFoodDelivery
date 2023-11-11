@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color: black;
     color: white;
     margin: 0;
@@ -67,7 +67,7 @@ body{
     font-size: 2rem;
 }*/
 
-.filter{
+/*.filter{
     margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -163,4 +163,4 @@ border-radius: 1.5rem;
 .user-card{
     border: 2px solid white;
     padding: 0rem 2rem;
-}
+}*/
