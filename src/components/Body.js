@@ -9,6 +9,8 @@ const Body = () =>{
     const [filtereRes, setfiltereRes] = useState([]);
     const [searchText, setsearchText] = useState("");
 
+    console.log(listofRes);
+
     useEffect(() => {
         fetchData();
     }, []);
@@ -42,7 +44,7 @@ const Body = () =>{
                     <div className="top-cont">
                         <input 
                             type="text"
-                            className="input-box border border-black px-2 bg-green-200"
+                            className="input-box border border-black px-2 bg-gray-100"
                             value={searchText}
                             onChange={(e)=>{
                                 setsearchText(e.target.value)
@@ -66,7 +68,7 @@ const Body = () =>{
                         }}>Top rated restaurant</button>
                 </div>
 
-                <div className="res-container flex flex-wrap ">
+                <div className="res-container flex flex-wrap m-1 justify-center">
                 {
                     filtereRes.map((restaurant) => ( <Link key={restaurant.info.id} className="custom-link"
                         to={"/restaurant/"+restaurant.info.id}>
