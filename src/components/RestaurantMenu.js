@@ -20,7 +20,7 @@ const RestaurantMenu = () => {
             <h2 className="my-4 font-bold text-xl underline">Menu</h2>
             <ul className="">
                 {itemCards.map(item => 
-                <li key={item.card.info.id}>{item.card.info.name} - {"Rs."} {(item.card.info.defaultPrice)/100 || (item.card.info.price)/100}{"/-"}</li>)}
+                <li key={item.card.info.id}>{item.card.info.name} - {"₹ "}{(item.card.info.defaultPrice)/100 || (item.card.info.price)/100}{"/-"}</li>)}
             </ul>   
         </div>
     )
